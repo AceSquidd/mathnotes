@@ -1,0 +1,137 @@
+{
+    /* Comandi veloci*/
+    "InlineFunctionRR": {
+        "prefix": "ifrr",
+        "body": [
+            "$ f:\\mathbb{R}\\rightarrow\\mathbb{R} $"
+        ],
+        "description": "summons a funtion definition in line, opening and closing a math environment, from A to B"
+    },
+    "InlineFunctionAB": {
+        "prefix": "ifab",
+        "body": [
+            "$ f:A\\rightarrow B $"
+        ],
+        "description": "summons a funtion definition in line, opening and closing a math environment, from R to R"
+    },
+    "MathLimInf": {
+        "prefix": "mli",
+        "body": [
+            "\\lim_{x \\to\\infty}"
+        ],
+        "description": "summons a limit sign when already in math mode, with x to inf"
+    },
+    "RelationAB": {
+        "prefix": "relab",
+        "body": [
+            "$ R \\subseteq A\\timesB $"
+        ],
+        "description": "Shortcut to write te relation definition"
+    },
+    /* Ripartizione in Indice */
+    "NewChapter": {
+        "prefix": "nc",
+        "body": [
+            "\\chapter{$1} \\label{cap:$2}"
+        ],
+        "description": "creates a new chapter"
+    },
+    "NewSection": {
+        "prefix": "ns",
+        "body": [
+            "\\section{$1} \\label{sec:$2}"
+        ],
+        "description": "creates a new section"
+    },
+    "NewSubSection": {
+        "prefix": "gss",
+        "body": [
+            "\\subsection*{$1}"
+        ],
+        "description": "creates a new ghost subsection with no label"
+    },
+    "NewSubSectionN": {
+        "prefix": "nss",
+        "body": [
+            "\\subsection{$1} \\label{ssec:$2}"
+        ],
+        "description": "creates a new subsection"
+    },
+    "NewSubSubSection": {
+        "prefix": "gsss",
+        "body": [
+            "\\subsubsection*{$1}"
+        ],
+        "description": "creates a new subsubsection"
+    },
+    "NewSubSubSectionN": {
+        "prefix": "nsss",
+        "body": [
+            "\\subsubsection{$1} \\label{sssec:$2}"
+        ],
+        "description": "creates a new subsubsection"
+    },
+    /*Environments*/
+    "BeginEquationN": {
+        "prefix": "ben",
+        "body": [
+            "\\begin{equation}\\label{eq:$1}",
+            "\t$0",
+            "\\end{equation}"
+        ],
+        "description": "Opens and Closes a Numbered Equation Environment with label"
+    },
+    "BeginEquation": {
+        "prefix": "be",
+        "body": [
+            "\\begin{equation*}",
+            "\t$0",
+            "\\end{equation*}"
+        ],
+        "description": "Opens and Closes a non Numbered Equation Environment with no label"
+    },
+    "BeginAlign": {
+        "prefix": "ba",
+        "body": [
+            "\\begin{align*}",
+            "\t$1 & $0",
+            "\\end{align*}"
+        ],
+        "description": "Opens and Closes a NON Numbered Align Environment with no label"
+    },
+    "BeginAlignL": {
+        "prefix": "bal",
+        "body": [
+            "\\begin{align} \\label{eq:$1}",
+            "\t$2 & $0",
+            "\\end{align}"
+        ],
+        "description": "Opens and Closes a Numbered Align Environment with label"
+    },
+    "BeginTheorem": {
+        "prefix": "bt",
+        "body": [
+            "\\begin{theorem}[${1:Teorema} $2]",
+            "\t${TM_SELECTED_TEXT:$0}",
+            "\\end{theorem}"
+        ],
+        "description": "Opens and Closes a Theorem Environment with no label"
+    },
+    "BeginDefinition": {
+        "prefix": "bd",
+        "body": [
+            "\\newline\\newline\\textbf{\\textit{Def:} $1}",
+            "\\begin{center}\n\t${TM_SELECTED_TEXT:$0}\n\\end{center}",
+        ],
+        "description": "Creates a Definition tag with proper lining"
+    },
+    "BeginProof": {
+        "prefix": "bdi",
+        "body": [
+            "\\subsubsection*{Dimostrazione}",
+            "\t$0",
+            "\\qedsymbol"
+        ],
+        "description": "Creates a Proof tag with spacing and lining"
+    },
+}
